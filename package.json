@@ -1,10 +1,30 @@
 {
   "name": "npm-global-audit",
   "version": "1.0.0",
-  "main": "index.js",
-  "author": "Andrew Brey <34140052+andrewbrey@users.noreply.github.com>",
+  "description": "CLI to perform an audit of globally installed node modules",
   "license": "MIT",
+  "author": "Andrew Brey <34140052+andrewbrey@users.noreply.github.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrewbrey/npm-global-audit.git"
+  },
+  "scripts": {
+    "start": "node build/src/index.js",
+    "clean": "rimraf build",
+    "build": "tsc"
+  },
+  "dependencies": {},
   "devDependencies": {
+    "rimraf": "3.0.2",
     "typescript": "4.3.2"
-  }
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "keywords": [
+    "npm",
+    "global",
+    "audit",
+    "cli"
+  ]
 }
