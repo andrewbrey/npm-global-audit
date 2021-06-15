@@ -11,5 +11,5 @@ export async function createTempLocations() {
 }
 
 export async function saveMinimalPackageJSON(path: string, packageJSON: MinimalPackageJSON) {
-  await writeJSON(path, packageJSON, { encoding: 'utf8', spaces: 2 });
+  await writeJSON(path, { license: 'UNLICENSED', ...packageJSON }, { encoding: 'utf8', spaces: 2 });
 }
