@@ -1,6 +1,6 @@
 {
   "name": "npm-global-audit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CLI to perform an audit of globally installed node modules",
   "license": "MIT",
   "author": "Andrew Brey <34140052+andrewbrey@users.noreply.github.com>",
