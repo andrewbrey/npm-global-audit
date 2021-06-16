@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { command } from 'execa';
 import { globalPackageJSON } from './deps';
 import { createTempLocations, saveMinimalPackageJSON } from './fs';
