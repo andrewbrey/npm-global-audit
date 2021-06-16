@@ -5,7 +5,6 @@ A utility to simplify (and make possible) an audit, i.e. `npm audit`, of globall
 ## Usage
 
 ```bash
-# npm
 npx npm-global-audit
 ```
 
