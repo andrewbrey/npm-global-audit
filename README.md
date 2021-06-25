@@ -2,6 +2,10 @@
 
 A utility to simplify (and make possible) an audit, i.e. `npm audit`, of globally installed node modules.
 
+[![Version](https://img.shields.io/npm/v/npm-global-audit.svg)](https://npmjs.org/package/npm-global-audit)
+[![Downloads/week](https://img.shields.io/npm/dw/npm-global-audit.svg)](https://npmjs.org/package/npm-global-audit)
+[![License](https://img.shields.io/npm/l/npm-global-audit.svg)](https://github.com/npm-global-audit/blob/master/package.json)
+
 ## Usage
 
 ```bash
