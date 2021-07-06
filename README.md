@@ -10,6 +10,10 @@ A utility to simplify (and make possible) an audit, i.e. `npm audit`, of globall
 
 ```bash
 npx npm-global-audit
+
+# or, if you prefer to use npm instead of yarn to perform the actual audit
+
+npx npm-global-audit --auditor npm
 ```
 
 ## How it works
@@ -18,6 +22,6 @@ npx npm-global-audit
 
 ## Notes
 
-- The actual audit is performed by `yarn` (which will be executed via `npx` in the event that you do not have `yarn` installed) as the output is more human-readable. This may change or be configurable in the future.
-- No node modules need to be installed locally for the audit to be performed (when `yarn` performs the audit) so your system temp dirs won't bloat up with ephemeral `node_module` installs.
+- By default the actual audit is performed by `yarn` (which will be executed via `npx` in the event that you do not have `yarn` installed) as the output is more human-readable. You can use `npm` instead if you prefer by passing the `-a` / `--auditor` option.
+- Your node modules need to be installed locally so that a lockfile can be generated which is needed to perform the audit (this is not strictly true when the auditor is yarn, but to keep the logic of this utility simple, it performs the install anyway). To ensure that your system temp dirs won't bloat up with ephemeral `node_module` installs the script will remove the installed "local" packages when the audit is complete, but will not remove the generated `package.json` or any relevant lockfiles.
 - The audit only supports `npm` globally installed node modules. This may be expanded to include other package managers in the future.
