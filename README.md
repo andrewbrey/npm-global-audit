@@ -1,3 +1,11 @@
+# This repository has been archived
+
+Thank you for everyone who used this module, starred the repository, or contributed with issues. Going forward, this repository will be in a readonly (archived) state, so feel free to fork it if you wish to continue work on it, and note that the module has been published to `npm` so if it still work well for you, then great!
+
+This was a fun project to build, but I simply won't have time or desire to address any feature requests or bug fixes going forward, so, I've decided to simply archive the code to reflect that reality.
+
+Thanks again - cheers!
+
 # NPM Global Audit
 
 A utility to simplify (and make possible) an audit, i.e. `npm audit`, of globally installed node modules.
